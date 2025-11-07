@@ -145,3 +145,13 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+  width: 100%;
+  padding: 15px 0;
+  position: relative; /* padrão em telas pequenas */
+}
+
+
