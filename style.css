@@ -103,7 +103,7 @@ label {
   font-weight: bold;
   color: #8a045c;
   margin-top: 10px;
-  display: block;
+  display: inline-block;
 }
 
 input, textarea, button {
