@@ -1,96 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>PUPASSURE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💞 Encontre Seu Amor</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="signup-container">
-    <div class="left-container">
-      <h1>
-        <i class="fas fa-paw"></i>
-        PUPASSURE
-      </h1>
-      <div class="puppy">
+  <div class="form-container">
+    <h1>💖 Encontre Minha Noiva</h1>
+    <p>Preencha o formulário e comece a buscar o amor da sua vida!</p>
 
-        <img src="Imagem do WhatsApp de 2025-11-07 à(s) 08.07.16_d73d74aa.jpg" alt="Puppy Image">
-    <div class="right-container">
-      <header>
-        <h1>Yay, puppies! Ensure your pup gets the best care!</h1>
-        <div class="set">
-          <div class="pets-name">
-            <label for="pets-name">Name</label>
-            <input id="pets-name" type="text" placeholder="Pet's name">
-          </div>
-          <div class="pets-photo">
-            <button id="pets-upload">
-              <i class="fas fa-camera-retro"></i>
-            </button>
-            <label for="pets-upload">Upload a photo</label>
-          </div>
-        </div>
+    <!-- Formulário funcional -->
+    <form action="https://getform.io/f/avrmogxa" method="POST" enctype="multipart/form-data">
 
-        <div class="set">
-          <div class="pets-breed">
-            <label for="pets-breed">Breed</label>
-            <input id="pets-breed" type="text" placeholder="Pet's breed">
-          </div>
-          <div class="pets-birthday">
-            <label for="pets-birthday">Birthday</label>
-            <input id="pets-birthday" type="text" placeholder="MM/DD/YYYY">
-          </div>
-        </div>
+      <!-- Nome -->
+      <label>Primeiro Nome</label>
+      <input type="text" name="nome" placeholder="Digite seu nome" required>
 
-        <div class="set">
-          <div class="pets-gender">
-            <label for="pet-gender-female">Gender</label>
-            <div class="radio-container">
-              <input id="pet-gender-female" name="pet-gender" type="radio" value="female" checked>
-              <label for="pet-gender-female">Female</label>
-              <input id="pet-gender-male" name="pet-gender" type="radio" value="male">
-              <label for="pet-gender-male">Male</label>
-            </div>
-          </div>
+      <label>Sobrenome</label>
+      <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
 
-          <div class="pets-spayed-neutered">
-            <label for="pet-spayed">Spayed or Neutered</label>
-            <div class="radio-container">
-              <input id="pet-spayed" name="spayed-neutered" type="radio" value="spayed" checked>
-              <label for="pet-spayed">Spayed</label>
-              <input id="pet-neutered" name="spayed-neutered" type="radio" value="neutered">
-              <label for="pet-neutered">Neutered</label>
-            </div>
-          </div>
-        </div>
+      <!-- Idade -->
+      <label>Idade</label>
+      <input type="number" name="idade" min="18" max="80" placeholder="Ex: 28" required>
 
-        <div class="pets-weight">
-          <label for="pet-weight-0-25">Weight</label>
-          <div class="radio-container">
-            <input id="pet-weight-0-25" name="pet-weight" type="radio" value="0-25" checked>
-            <label for="pet-weight-0-25">0-25 lbs</label>
+      <!-- Cidade -->
+      <label>Cidade</label>
+      <input type="text" name="cidade" placeholder="Digite sua cidade" required>
 
-            <input id="pet-weight-25-50" name="pet-weight" type="radio" value="25-50">
-            <label for="pet-weight-25-50">25-50 lbs</label>
+      <!-- Foto -->
+      <label>Sua foto</label>
+      <input type="file" name="foto" accept="image/*" required>
 
-            <input id="pet-weight-50-100" name="pet-weight" type="radio" value="50-100">
-            <label for="pet-weight-50-100">50-100 lbs</label>
+      <!-- Interesses -->
+      <label>O que você gosta de fazer?</label>
+      <div class="interesses">
+        <label><input type="checkbox" name="interesses" value="viagens"> ✈️ Viajar</label>
+        <label><input type="checkbox" name="interesses" value="musica"> 🎵 Música</label>
+        <label><input type="checkbox" name="interesses" value="filmes"> 🎬 Filmes</label>
+        <label><input type="checkbox" name="interesses" value="esportes"> ⚽ Esportes</label>
+        <label><input type="checkbox" name="interesses" value="cozinhar"> 🍳 Cozinhar</label>
+        <label><input type="checkbox" name="interesses" value="ler"> 📚 Ler</label>
+        <label><input type="checkbox" name="interesses" value="caminhar"> 🚶‍♀️ Caminhar</label>
+        <label><input type="checkbox" name="interesses" value="truco"> ♣️ Jogar truco</label>
+        <label><input type="checkbox" name="interesses" value="apostar"> 🎰 Apostar</label>
+      </div>
 
-            <input id="pet-weight-100-plus" name="pet-weight" type="radio" value="100+">
-            <label for="pet-weight-100-plus">100+ lbs</label>
-          </div>
-        </div>
-      </header>
+      <!-- Preferências -->
+      <label>Como seria sua parceira ideal?</label>
+      <textarea name="preferencias" placeholder="Ex: Me chamo Yasmim e gosto de ler..." required></textarea>
 
-      <footer>
-        <div class="set">
-          <button id="back">Back</button>
-          <button id="next">Next</button>
-        </div>
-      </footer>
-    </div>
+      <!-- Email -->
+      <label>Seu e-mail</label>
+      <input type="email" name="email" placeholder="exemplo@gmail.com" required>
+
+      <!-- Botão -->
+      <button type="submit">💌 Enviar Seu Formulário</button>
+    </form>
   </div>
 </body>
 </html>
