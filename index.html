@@ -8,36 +8,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Fundo de corações -->
+  <div id="hearts-container"></div>
+
+  <!-- Conteúdo principal -->
   <div class="form-container">
-    <h1>💖 Encontre Meu Amor </h1>
+    <h1>💖 Encontre Meu Amor</h1>
     <p>Preencha o formulário e comece a buscar o amor da sua vida!</p>
 
-    <!-- Formulário funcional -->
     <form action="https://getform.io/f/avrmogxa" method="POST" enctype="multipart/form-data">
 
-      <!-- Nome -->
       <label>Primeiro Nome</label>
       <input type="text" name="nome" placeholder="Digite seu nome" required>
 
       <label>Sobrenome</label>
       <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
 
-      <!-- Idade -->
       <label>Idade</label>
       <input type="number" name="idade" min="18" max="80" placeholder="Ex: 28" required>
 
-      <!-- Cidade -->
       <label>Cidade</label>
       <input type="text" name="cidade" placeholder="Digite sua cidade" required>
 
-        <label>telefone</label>
-      <input type="text" name="telefone" placeholder="Digite seu telefone" required>
+            <label>Telefone</label>
+      <input type="text" name="Telefone" placeholder="Digite seu Telefone" required>
 
-      <!-- Foto -->
       <label>Sua foto</label>
       <input type="file" name="foto" accept="image/*" required>
 
-      <!-- Interesses -->
       <label>O que você gosta de fazer?</label>
       <div class="interesses">
         <label><input type="checkbox" name="interesses" value="viagens"> ✈️ Viajar</label>
@@ -51,22 +49,27 @@
         <label><input type="checkbox" name="interesses" value="apostar"> 🎰 Apostar</label>
       </div>
 
-      <!-- Preferências -->
       <label>Como seria sua parceira ideal?</label>
-      <textarea name="preferencias" placeholder="Ex: Eu gostaria de encontra uma pessoa que gosta de jogar..." required></textarea>
+      <textarea name="preferencias" placeholder="Ex: Alguém carinhosa, que goste de ler e viajar..." required></textarea>
 
-       <!-- Preferências -->
       <label>Diga um pouco de você</label>
-      <textarea name="preferencias" placeholder="Ex: Me chamo Yasmim e gosto de ler..." required></textarea>
+      <textarea name="preferencias" placeholder="Ex: Meu nome é Yasmim e eu gosto de ler..." required></textarea>
 
-      <!-- Email -->
       <label>Seu e-mail</label>
       <input type="email" name="email" placeholder="exemplo@gmail.com" required>
 
-      <!-- Botão -->
       <button type="submit">💌 Enviar Seu Formulário</button>
     </form>
   </div>
-  
+
+
+<div id="hearts-container"></div>
+
+
+  <footer>
+    <p>© 2025 Encontre Meu Amor — Todos os direitos reservados 💞</p>
+  </footer>
+
+  <script src="hearts.js"></script>
 </body>
 </html>
